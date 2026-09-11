@@ -10,7 +10,7 @@ CREATE TABLE partners (
     phone           VARCHAR(20)     UNIQUE,
     rating          DECIMAL(3,1)    DEFAULT 0.0 CHECK (rating >= 0 AND rating <= 5),
 
-    CONSTRAINT chk_inn_length CHECK (LENGTH(inn) IN (10, 12)) -- 10 для ООО, 12 для ИП
+    CONSTRAINT chk_inn_length CHECK (inn ~ '^\d{10}$' OR inn ~ '^\d{12}$'); -- 10 для ООО, 12 для ИП
 );
 
 CREATE TABLE products (

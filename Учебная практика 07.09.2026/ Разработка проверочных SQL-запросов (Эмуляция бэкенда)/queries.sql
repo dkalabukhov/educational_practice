@@ -4,7 +4,8 @@ SELECT
     p.company_name,
     COUNT(s.sale_id) AS deliveries_count
 FROM partners p
-JOIN sales_history s ON p.partner_id = s.partner_id
+-- Исправил ошибку (LEFT JOIN вместо JOIN)
+LEFT JOIN sales_history s ON p.partner_id = s.partner_id
 GROUP BY p.partner_id, p.company_name
 ORDER BY p.company_name ASC;
 
