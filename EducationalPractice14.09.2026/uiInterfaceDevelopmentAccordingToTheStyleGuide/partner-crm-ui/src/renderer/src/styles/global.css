@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #111;
+  background: #ffffff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Контейнер списка — с внешней рамкой, как на картинке */
+.partners-list {
+  flex: 1;
+  margin: 16px;
+  padding: 12px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  overflow-y: auto;
+}
+
+.state {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+}

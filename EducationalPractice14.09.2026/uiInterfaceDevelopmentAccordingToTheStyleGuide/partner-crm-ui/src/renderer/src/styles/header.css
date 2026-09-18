@@ -1,0 +1,34 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #ccc;
+  background: #fafafa;
+}
+
+.app-logo {
+  height: 48px;
+  width: auto;
+}
+
+.app-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid #333;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn:hover {
+  background: #f0f0f0;
+}
