@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.edit-window {
+  padding: 20px 24px;
+}
+
+.partner-form {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.partner-form__title {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 4px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field__label {
+  font-size: 13px;
+  color: #444;
+}
+
+.field input,
+.field select {
+  padding: 8px 10px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #fff;
+  color: #111;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: #222;
+}
+
+/* Плейсхолдер — серый, чтобы не путать с введённым значением */
+.field input::placeholder {
+  color: #999;
+}
+
+.partner-form__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid #222;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover { background: #f2f2f2; }
+
+.btn--primary {
+  background: #222;
+  color: #fff;
+}
+
+.btn--primary:hover { background: #444; }
